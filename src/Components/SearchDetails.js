@@ -10,9 +10,10 @@ const OpskriftDetails = props => {
                 <Row>
                     <Col>
                     <h3>Ingredienser</h3>
-                    {props.opskrift.ingredienser.map((ingrediens) => {
+                    {props.opskrift.ingredienser}
+                    {/* {props.opskrift.ingredienser.map((ingrediens) => {
                         <p>{ingrediens}</p>
-                    })}
+                    })} */}
 
                     <h3>fremgangsmåde</h3>
                     {props.opskrift.fremgangsmåde}

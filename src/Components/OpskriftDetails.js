@@ -14,10 +14,11 @@ const OpskriftDetails = ({ opskrift }) => {
                 <Row>
                     <Col>
                     <h3>Ingredienser</h3>
-                    {opskrift.ingredienser.map((ingrediens) => {
+                    {opskrift.ingredienser}
+                    {/* {opskrift.ingredienser.map((ingrediens) => {
                         <p>{ingrediens}</p>
                     })}
-
+ */}
                     <h3>fremgangsmåde</h3>
                     {opskrift.fremgangsmåde}
                     </Col>
