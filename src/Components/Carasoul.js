@@ -14,7 +14,7 @@ class Carasoul extends React.Component
                   <img  className="d-block w-100" src={opskrift.billede} />
                   <Carousel.Caption>
                     <h5>{opskrift.navn}</h5>
-                    <p>{(opskrift.fremgangsmåde).slice(0,50) + "..."}</p>
+                    <p>{(opskrift.fremgangsmaade).slice(0,50) + "..."}</p>
                   </Carousel.Caption>
                 </Carousel.Item>
       })

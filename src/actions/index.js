@@ -8,7 +8,7 @@ export const selectItem = (opskrift) => {
 }
 
 export const fetchAll = () => async dispatch => {
-    const response = await opskriftapi.get('/api/Opskrifts')
+    const response = await opskriftapi.get('/Opskrifts')
     console.log(response.data)
     dispatch({type: 'FETCH_DATA', payload: response.data})
     //this is suppossed to fetch all the data from the api

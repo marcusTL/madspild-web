@@ -2,7 +2,7 @@ import React from 'react';
 import {Container,Row,Col} from 'react-bootstrap';
 
 const OpskriftDetails = props => {
-    console.log("Test-SearchDetails");
+
     if (props.opskrift){
         return (
             <div>
@@ -10,13 +10,11 @@ const OpskriftDetails = props => {
                 <Row>
                     <Col>
                     <h3>Ingredienser</h3>
-                    {props.opskrift.ingredienser}
-                    {/* {props.opskrift.ingredienser.map((ingrediens) => {
-                        <p>{ingrediens}</p>
-                    })} */}
-
-                    <h3>fremgangsmåde</h3>
-                    {props.opskrift.fremgangsmåde}
+                    {/* The problem was syntax related, too many curly brackets. */}
+                    {props.opskrift.ingredienser.map(ing => <p key={ing}>{ing}</p>)}
+             
+                    <h3>Fremgangsmåde</h3>
+                    {props.opskrift.fremgangsmaade}
                     </Col>
                     <Col>
                             <img style={{width: 400}} src={props.opskrift.billede}/>
